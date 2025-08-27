@@ -1,0 +1,381 @@
+* {
+    margin: 0;
+    padding: 22;
+    box-sizing: border-box;
+}
+/* Style for the logo */
+.logo {
+    
+    font-family: 'Franklin Gothic Medium'; 
+    font-size: 24px; /* Default font size */
+    font-weight: bold;
+    color: #ffb300;
+    transition: color 0.3s ease, font-size 0.3s ease; /* Smooth transition for color and size */
+}
+
+/* Change color and size on hover */
+.logo:hover {
+    font-family: 'Times New Roman', Times, serif;
+    
+    color: #fdf911; 
+    font-size: 32px; /* Increase size on hover */
+}
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-image:url('https://static.vecteezy.com/system/resources/thumbnails/019/187/182/small/yellow-abstract-background-vector.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: scroll; 
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+    color: #00fbff;
+    font-size: 22px;
+    transition: 250ms;
+}
+
+
+#about:hover, #projects:hover, #contact:hover ,#certificates:hover  {
+    background-color: #faf6ea; 
+    
+    font-size: 18px; 
+    transition: 400ms;
+}
+
+
+#about h2:hover, #projects h2:hover, #contact h2:hover #send h2:hover{
+    color: #007bff; 
+    text-decoration: dashed; /* Adds an underline */
+}
+
+
+header {
+    background: #000000;
+    color: #ffffff;
+    padding: 10px ;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:    10px;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+}
+
+header nav ul li {
+    margin-left: 50px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#hero {
+    height: 90vh;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 60%, rgba(122, 246, 248, 0.7) 100%),
+      url('https://img.freepik.com/premium-vector/elegant-cream-shade-background-with-golden-curve-line-elements-glitter-light-effects-3d-modern-concept-vector-illustration-design_196599-539.jpghttps://img.freepik.com/free-vector/gradient-golden-luxury-frame-template_23-2149056081.jpghttps://img.freepik.com/premium-photo/abstract-background-images-wallpaper-ai-generated_643360-28802.jpg' );
+    background-size: cover;
+    background-position: center;
+    background-attachment: scroll;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column; 
+    color: rgb(5, 5, 151);
+}
+
+.hero-text {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    text-align: center;
+}
+
+.profile-picture {
+    border-radius:50%;
+    width: 300px;
+    height: 300px; 
+    margin-bottom: 20px; 
+    object-fit: cover;
+    transition: width 0.3s ease, height 0.3s ease; 
+}
+
+
+.profile-picture:hover {
+    width: 420px; /* New width on hover */
+    height: 425px; /* New height on hover */
+}
+
+
+.hero-text h1 {
+    font-size: 3rem;
+    white-space: nowrap;
+    margin-bottom: 10px; 
+}
+
+.hero-text p {
+    margin: 10px 0;
+    font-size: 1.5rem;
+}
+
+.cta {
+    text-decoration: none;      /* Remove underline */
+    color: blue;                /* Default text color */
+    font-size: 18px;            /* Text size */
+    padding: 10px 20px;         /* Padding for better appearance */
+    border: 2px solid blue;     /* Add border */
+    border-radius: 5px;         /* Rounded corners */
+    display: inline-block;      /* Make it behave like a button */
+  }
+  
+.cta:hover {
+    background-color: rgb(0, 0, 255);     /* Change background color on hover */
+    color: white;               /* Change text color on hover */
+    border-color: rgb(28, 0, 139);     /* Change border color on hover */
+  }
+  
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+    100% {
+        border-color: rgb(40, 105, 197);
+    }
+}
+
+.typewriter {
+    font-family: monospace;
+    display: inline-flex;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: px solid rgb(40, 105, 197); 
+    width: 0; 
+    animation: typing 3s steps(200, end) forwards, blink 0.75s step-end infinite; /
+}
+.para{
+    font-family: Arial, Helvetica, sans-serif;
+    animation: typing 0.8s steps(7, end) forwards, blink 0.75s step-end infinite; 
+
+}
+
+
+
+.typewriter-subtitle {
+    font-family: monospace;
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 3px solid rgb(40, 105, 197); 
+    width: 0;
+    animation: typingSubtitle 4s steps(30, end) forwards, blinkSubtitle 0.75s step-end infinite; 
+}
+
+
+
+
+#about, #projects, #contact{
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#projects .project-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.project-card {
+    background-color: #e6efef;
+    padding: 20px;
+    margin: 10px;
+    width: 300px;
+    border-radius: 10px;
+    text-align: center; /* Centers the image and text */
+}
+
+.project-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.project-card h3 {
+    margin-bottom: 15px;
+}
+
+#certificates {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+/* Gallery container styling */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 40px; /* smaller gap looks cleaner */
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Gallery item = image + text */
+.gallery-item {
+    text-align: center;
+    border-radius: 12px;
+    background: #fff;
+    padding: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Image inside gallery item */
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    display: block;
+    margin: 0 auto 10px;
+}
+
+/* Caption text */
+.gallery-item p {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* Hover effect (apply on whole card instead of only img) */
+.gallery-item:hover {
+    transform: scale(1.1); /* zooms image + text together */
+    box-shadow: 0px 10px 25px rgba(0,0,0,0.25);
+}
+
+
+#contact {
+    text-align: center; /* Centers the content */
+    padding: 50px 20px;
+}
+
+#contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#contact form input, #contact form textarea {
+    width: 100%;
+    max-width: 500px;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+#contact form button {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: #302f2f;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+h3 {
+    width: 100%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    margin-bottom: 10px;
+    transition: transform 0.3s, color 0.3s;
+    
+    color: #ff6600;
+}
+h3:hover {
+    transform: scale(1.2);
+    color: #0ae9cb;
+     
+}
+.gg {
+    width: 100%;
+    font-size: 50px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    margin-bottom: 10px;
+    transition: transform 0.3s, color 0.3s;
+    
+    color: #ff6600;
+}
+.gg:hover {
+    transform: scale(1.2);
+    color: #0ae9cb;
+     
+}
+
+/* Gallery container styling */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 150px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Individual image container */
+.gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect for images */
+.gallery img:hover {
+    transform: scale(1.55);
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Optional styling for footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+}

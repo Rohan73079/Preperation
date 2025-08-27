@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Subjects Navigation</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f2f5f9;
+      text-align: center;
+      padding: 50px;
+      position: relative;
+      min-height: 100vh;
+    }
+
+    .banner {
+      max-width: 50%;
+      height: auto;
+      border-radius: 25px;
+      margin-bottom: 15px;
+      box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
+    }
+
+    h1 {
+      color: #333;
+      margin-bottom: 20px;
+    }
+
+    h2 {
+      margin-bottom: 40px;
+      color: #555;
+    }
+
+
+    .button-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Bigger min size */
+  gap: 25px;
+  max-width: 150%; /* remove fixed 1000px */
+  margin: auto;
+}
+
+
+
+
+
+    .subject-card {
+      background: white;
+      border-radius: 15px;
+      padding: 10px;
+      box-shadow: 0px 4px 6px rgba(0,0,0,0.1);
+      transition: 0.3s;
+    }
+
+    .subject-card:hover {
+      transform: scale(1.05);
+      box-shadow: 0px 6px 12px rgba(0,0,0,0.15);
+    }
+
+    .subject-card img {
+      width: 100%;
+      height: 220px;
+      object-fit: fill;
+      border-radius: 12px;
+      margin-bottom: 10px;
+    }
+
+    .subject-card p {
+      font-size: 18px;
+      font-weight: bold;
+      color: #333;
+      margin: 0;
+    }
+
+    /* Small Notes Button */
+    .notes-button {
+      display: inline-block;
+      margin-top: 8px;
+      padding: 8px 15px;
+      background: #28a745;
+      color: white;
+      font-size: 14px;
+      border-radius: 6px;
+      text-decoration: none;
+      transition: 0.3s;
+      box-shadow: 0px 4px 6px rgba(0,0,0,0.2);
+    }
+
+    .notes-button:hover {
+      background: #1e7e34;
+    }
+
+    /* Back Button */
+    .back-button {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      background: #007bff;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 16px;
+      box-shadow: 0px 4px 6px rgba(0,0,0,0.2);
+      transition: 0.3s;
+    }
+
+    .back-button:hover {
+      background: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <!-- Back Button -->
+  <button class="back-button" onclick="location.href='index.html'">⬅ Back</button>
+
+  <!-- Banner Image -->
+  <img class="banner" src="https://www.hireclap.com/blog/wp-content/uploads/2023/02/capture_20191030115853.png" alt="UPSI Banner">
+
+  <h1>Placement Preparation</h1>
+  <h2>Choose Your Subject</h2>
+
+  <div class="button-container">
+    <!-- SQL -->
+    <div class="subject-card">
+      <div onclick="location.href='https://www.youtube.com/watch?v=hlGoQC332VM&t=103s'" style="cursor:pointer;">
+        <img src="https://i.ytimg.com/vi/hlGoQC332VM/maxresdefault.jpg" alt="SQL By Shraddha Khapra">
+        <p>SQL By Shraddha Khapra</p>
+      </div>
+      <!-- Notes Button -->
+      <a class="notes-button" href="https://drive.google.com/drive/folders/1OeHQaGTxgvBakJIbQ1QC9grO7WqDkPDg" target="_blank">📘 SQL Notes</a>
+    </div>
+
+    <!-- OOPS -->
+    <div class="subject-card" onclick="location.href='https://www.youtube.com/watch?v=mlIUKyZIUUU'">
+      <img src="https://i.ytimg.com/vi/mlIUKyZIUUU/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLDeYOHnyCL7pDIOslbcp7yXXCiktA" alt="OOPS by Shraddha Khapra">
+      <p>OOPS by Shraddha Khapra</p>
+    </div>
+
+    <!-- DSA -->
+    <div class="subject-card" onclick="location.href='https://www.youtube.com/playlist?list=PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt'">
+      <img src="https://i.ytimg.com/vi/VTLCoHnyACE/hqdefault.jpg" alt="Complete C++ DSA">
+      <p>Complete C++ DSA</p>
+    </div>
+
+
+    <!-- HTML -->
+    <div class="subject-card" onclick="location.href='https://www.youtube.com/watch?v=HcOc7P5BMi4'">
+      <img src="https://i.ytimg.com/vi/HcOc7P5BMi4/hqdefault.jpg" alt="Complete Html">
+      <p>Complete Html</p>
+    </div>
+
+    <!-- Notes -->
+    <div class="subject-card" onclick="location.href='https://drive.google.com/drive/folders/1wfNTKinBAV6CCxaI5lfSnnRFAYpy0uEl'">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPN3EXan7dPuXfVnt5xJMhxGfrXbF-RewbLQ&s" alt="Notes">
+      <p>Notes By Shraddha Khapra</p>
+    </div>
+  </div>
+</body>
+</html>

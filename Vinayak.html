@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Subjects Navigation</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f2f5f9;
+      text-align: center;
+      padding: 50px;
+      position: relative;
+      min-height: 100vh;
+    }
+
+    .banner {
+      max-width: 50%;
+      height: auto;
+      border-radius: 25px;
+      margin-bottom: 15px;
+      box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
+    }
+
+    h1 {
+      color: #333;
+      margin-bottom: 20px;
+    }
+
+    h2 {
+      margin-bottom: 40px;
+      color: #555;
+    }
+
+    .button-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 25px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .subject-card {
+      background: white;
+      border-radius: 15px;
+      padding: 15px;
+      box-shadow: 0px 4px 6px rgba(0,0,0,0.1);
+      transition: 0.3s;
+      cursor: pointer;
+    }
+
+    .subject-card:hover {
+      transform: scale(1.05);
+      box-shadow: 0px 6px 12px rgba(0,0,0,0.15);
+    }
+
+    .subject-card img {
+      width: 100%;
+      height: 120px;
+      object-fit: cover;
+      border-radius: 12px;
+      margin-bottom: 10px;
+    }
+
+    .subject-card p {
+      font-size: 18px;
+      font-weight: bold;
+      color: #333;
+      margin: 0;
+    }
+
+    /* Back Button */
+    .back-button {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      background: #007bff;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 16px;
+      box-shadow: 0px 4px 6px rgba(0,0,0,0.2);
+      transition: 0.3s;
+    }
+
+    .back-button:hover {
+      background: #0056b3;
+    }
+
+    /* Help Box Button */
+    .help-box {
+      margin-top: 50px;
+    }
+
+    .help-box a {
+      display: inline-block;
+      background: #28a745;
+      color: white;
+      text-decoration: none;
+      padding: 12px 25px;
+      font-size: 16px;
+      border-radius: 8px;
+      box-shadow: 0px 4px 6px rgba(0,0,0,0.2);
+      transition: 0.3s;
+    }
+
+    .help-box a:hover {
+      background: #1e7e34;
+    }
+  </style>
+</head>
+<body>
+  <!-- Back Button -->
+  <button class="back-button" onclick="location.href='index.html'">⬅ Back</button>
+
+  <!-- Banner Image -->
+  <img class="banner" src="https://appx-content-v2.classx.co.in/paid_course3/2025-04-10-0.6126358571668598.jpeg" alt="UPSI Banner">
+
+  <h1>UPSI 2025 ( विनायक 2.0 बैच )</h1>
+  <h2>Choose Your Subject</h2>
+
+  <div class="button-container">
+    <!-- Maths -->
+    <div class="subject-card" onclick="location.href='//t.me/c/3071244425/379'">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTibehF2FS6qFzgNoYIk19GVv6WNEF-3ghMVQ&s" alt="Maths">
+      <p>Maths</p>
+    </div>
+
+    <!-- Hindi -->
+    <div class="subject-card" onclick="location.href='https://t.me/c/3071244425/1202'">
+      <img src="https://www.shutterstock.com/image-vector/vector-graphic-illustration-indian-lady-260nw-1800423997.jpg" alt="Hindi">
+      <p>Hindi</p>
+    </div>
+
+    <!-- Moolvidhi -->
+    <div class="subject-card" onclick="location.href='https://t.me/c/3071244425/1872'">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtkvrzdVNpYOVvYQQqjQ66dy7QXJuKvyvVUg&s" alt="Moolvidhi">
+      <p>Moolvidhi</p>
+    </div>
+
+    <!-- Reasoning -->
+    <div class="subject-card" onclick="location.href='https://t.me/c/3071244425/635'">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSN-gmAwQt3QgXBWK7maAgB13I7GS6NoOWP8A&s" alt="Reasoning">
+      <p>Reasoning</p>
+    </div>
+
+    <!-- GS Folder -->
+    <div class="subject-card" onclick="location.href='gs.html'">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSr2gQ9tRAS_ykLfmqsG0MFyMXuYUwhBPLobQ&s" alt="General Studies">
+      <p>General Studies (GS)</p>
+    </div>
+  </div>
+
+  <!-- Help Box -->
+  <div class="help-box">
+    <a href="https://telegram.me/+4U4MzXFFTT02MWU1" target="_blank">📢 If lecture not opens then join the channel first</a>
+  </div>
+
+</body>
+</html>
