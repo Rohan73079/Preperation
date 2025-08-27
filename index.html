@@ -10,6 +10,9 @@
       background: linear-gradient(to right, #e3f2fd, #f9fbe7);
       margin: 0;
       padding: 0;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh; /* full viewport height */
     }
 
     /* Navbar */
@@ -36,6 +39,9 @@
     }
 
     /* Main */
+    .main {
+      flex: 1; /* pushes footer to bottom */
+    }
     .welcome {
       text-align: center;
       padding: 50px 20px 20px 20px;
@@ -82,7 +88,6 @@
       color: white;
       text-align: center;
       padding: 15px;
-      margin-top: 30px;
     }
   </style>
 </head>
@@ -97,23 +102,26 @@
     </div>
   </div>
 
-  <!-- Welcome Section -->
-  <div class="welcome">
-    <h1>Welcome to Study Portal 🚀</h1>
-    <p>Choose your batch and start your learning journey with us.  
-    We provide Police preparation, Placement training, and other competitive batches.</p>
-  </div>
+  <!-- Main Content -->
+  <div class="main">
+    <!-- Welcome Section -->
+    <div class="welcome">
+      <h1>Welcome to Study Portal 🚀</h1>
+      <p>Choose your batch and start your learning journey with us.  
+      We provide Police preparation, Placement training, and other competitive batches.</p>
+    </div>
 
-  <!-- Buttons -->
-  <div class="button-container">
-    <button class="batch-btn" onclick="location.href='Police batches.html'">🚔 Police Batches</button>
-    <button class="batch-btn" onclick="location.href='Placementprep.html'">💼 Placement Preparation</button>
-    <button class="batch-btn" onclick="location.href='otherbatch.html'">📚 Other Batches</button>
+    <!-- Buttons -->
+    <div class="button-container">
+      <button class="batch-btn" onclick="location.href='Police batches.html'">🚔 Police Batches</button>
+      <button class="batch-btn" onclick="location.href='Placementprep.html'">💼 Placement Preparation</button>
+      <button class="batch-btn" onclick="location.href='otherbatch.html'">📚 Other Batches</button>
+    </div>
   </div>
 
   <!-- Footer -->
   <div class="footer">
-    <p>© 2025 UPSI Preparation | Designed by You</p>
+    <p>© 2025 Study Portal | Designed by Rohan Kumar</p>
   </div>
 </body>
 </html>
